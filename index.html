@@ -519,7 +519,9 @@
       return;
     }
 
-    const csvURL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${SHEET_GID}`;
+    // const csvURL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${SHEET_GID}`;
+    // const csvURL = 'https://docs.google.com/spreadsheets/d/1PIwzima3FaORwCrcao69QwOI9LzsJyg90iwhbkaWaDQ/edit?usp=sharing';
+    const csvURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRE2tn25iVqz7G3N93-k9fQlmJcbAhDuVn0TwlO7_QMG2lmlEpN4MtJB1MD9UxwdFgUq6JGsumbFFOl/pub?output=csv';
     try {
       const res  = await fetch(csvURL);
       const text = await res.text();
